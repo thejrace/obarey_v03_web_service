@@ -1,0 +1,116 @@
+<LinearLayout
+	android:oriantation="horizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:weightSum="1"
+	>
+	
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:weight="0.2"
+		>
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/avatar_test"
+			/>
+	</LinearLayout>
+
+	<LinearLayout 
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:weight="0.4"
+		android:weightSum="1"
+		>
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:weight="0.5">
+			<TextView 
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="Ahmet Kanbur"
+				android:id="@+id/header_user_name"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:oriantation="horizontal"
+			android:weight="0.5"
+			android:weightSum="1">
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:oriantation="horizontal"
+				android:weight="0.5">
+
+				<ImageView 
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:background="@drawable/notf_user_level" />
+				<TextView 
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="27"
+					android:id="@+id/header_user_level" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:oriantation="horizontal"
+				android:weight="0.5">
+
+				<ImageView 
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:background="@drawable/notf_user_points" />
+				<TextView 
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="9287"
+					android:id="@+id/header_user_points" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:weightSum="0.9"
+			android:oriantation="horizontal"
+			android:weight="0.5">
+
+			<ImageButton 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/friend_requests_notf"
+				android:id="@+id/requests_notf_btn"
+				android:weight="0.3"
+				/>
+			<ImageButton 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/news_notf"
+				android:id="@+id/news_notf_btn"
+				android:weight="0.3"
+				/>
+			<ImageButton 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="@drawable/settings_notf"
+				android:id="@+id/settings_notf_btn"
+				android:weight="0.3"
+				/>
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+
+</LinearLayout>
